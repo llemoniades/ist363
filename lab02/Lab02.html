@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lucas Lemoniades</title>
+    <style>
+        body {
+            background-color: #E38E49;
+            color: black;
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            background-color: #D4EBF8;
+            border-radius: 15px;
+            padding: 20px;
+            margin: 20px auto;
+            width: 80%;
+            max-width: 800px;
+            text-align: left;
+        }
+        h1 {
+            color: #0A3981;
+        }
+        .flex-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .flex-container div {
+            flex: 1 1 50%;
+            box-sizing: border-box;
+        }
+        .flex-container img {
+            width: 100%;
+            height: auto;
+        }
+        .highlight {
+            color: #E38E49;
+        }
+    @media (max-width: 600px) {
+        .flex-container div {
+            flex: 1 1 100%;
+        }
+    }
+    @keyframes slideDown {
+            0% {
+                transform: translateY(-100%);
+            }
+            100% {
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes flip {
+            0% {
+                transform: rotateY(0);
+            }
+            100% {
+                transform: rotateY(360deg);
+            }
+        }
+
+        @keyframes pulse {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.05);
+            }
+        }
+
+        h1 {
+            animation: slideDown 1s ease-out, flip 1s 1s ease-in-out, pulse 1s 2s infinite;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Lucas Lemoniades</h1>
+        <p>Something <span class="highlight">personal</span> about me is that, despite being in college and turning 22 this summer, I have yet to obtain my driver's license due to a variety of factors, including the COVID-19 pandemic and my own mental health. In terms of something <span class="highlight">professional</span>, I work as a crew member at Wendy's and have been there since August 2023. Finally, something <span class="highlight">peculiar</span> about me is that I love to play video games.</p>
+        <div class="flex-container">
+            <div> <img src="Me.jpg" alt="Me"></div>
+            <div> <img src="liscence.jpg" alt="License"></div>
+            <div> <img src="Work.JPG" alt="Work"></div>
+            <div> <img src="Game.JPG" alt="Game"></div>
+        </div>
+    </div>
+</body>
+</html>
