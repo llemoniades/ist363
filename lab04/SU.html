@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Orange News</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+    </head>      
+<body class="bg-gray-100">
+    <header class="bg-[#1e1b4b] text-white p-4 flex justify-between items-center">
+        <h1 class="text-xl font-bold text-yellow-400">Orange <span class="text-white">News</span></h1>
+        <nav>
+            <div class="flex space-x-4">
+                <a href="#" class="hover:underline">Home</a>
+                <a href="#" class="hover:underline">Latest</a>
+                <a href="#" class="hover:underline">Scores</a>
+                <a href="#" class="hover:underline">Videos</a>
+                <a href="#" class="hover:underline">More</a>
+            </div>
+        </nav>
+    </header>
+    
+    <section class="relative w-full">
+        <img src="images/campus.jpg" alt="Campus" class="w-full h-64 object-cover">
+        <div class="bg-gray-800 text-white p-4 w-full">
+            <h2 class="text-lg font-bold">Will the Snow Ever Thaw?</h2>
+            <p>Get the latest scoop on the weather and everything that affects the jet stream.</p>
+        </div>
+    </section>
+    
+    <section class="p-6 w-full">
+        <h2 class="text-xl font-bold mb-4">More Featured Stories</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+            <div class="bg-white p-4 shadow-lg rounded-lg">
+                <img src="images/graduates.jpg" alt="Graduation 2025" class="w-full h-40 object-cover rounded">
+                <h3 class="font-bold mt-2">Graduation 2025</h3>
+                <p>Invite your friends and family to join us in May.</p>
+            </div>
+            <div class="bg-white p-4 shadow-lg rounded-lg">
+                <img src="images/runners.jpg" alt="Workplace Run" class="w-full h-40 object-cover rounded">
+                <h3 class="font-bold mt-2">Workplace Run</h3>
+                <p>Run a 5k with your colleagues.</p>
+            </div>
+            <div class="bg-white p-4 shadow-lg rounded-lg">
+                <img src="images/artshow.jpg" alt="Art Show" class="w-full h-40 object-cover rounded">
+                <h3 class="font-bold mt-2">Art Show</h3>
+                <p>The best art of the year on display at Schaffer.</p>
+            </div>
+        </div>
+    </section>
+    
+    <section class="p-6 grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div>
+            <h2 class="text-xl font-bold mb-2">Top Headlines</h2>
+            <div class="space-y-2">
+                <div class="bg-white p-3 shadow rounded">
+                    <h3 class="font-bold">Player X Breaks Record</h3>
+                    <p class="text-gray-600">The record-breaking performance from Player X stunned fans everywhere...</p>
+                </div>
+                <div class="bg-white p-3 shadow rounded">
+                    <h3 class="font-bold">Team Y Wins Championship</h3>
+                    <p class="text-gray-600">In an epic showdown, Team Y came out on top with a historic victory...</p>
+                </div>
+                <div class="bg-white p-3 shadow rounded">
+                    <h3 class="font-bold">Athlete Z Announces Retirement</h3>
+                    <p class="text-gray-600">Athlete Z's retirement shocked the sports world...</p>
+                </div>
+            </div>
+        </div>
+        <div>
+            <h2 class="text-xl font-bold mb-2">Game Scores</h2>
+            <div class="bg-white p-4 shadow rounded space-y-2">
+                <div class="font-bold p-2 border-b flex justify-between">
+                    <div>Game</div>
+                    <div>Score</div>
+                </div>
+                <div class="flex justify-between p-2 border-b"><div>Women's Hockey vs Miami</div><div>3 - 1</div></div>
+                <div class="flex justify-between p-2 border-b"><div>Men's Lacrosse vs St. Bonaventure</div><div>7 - 18</div></div>
+                <div class="flex justify-between p-2"><div>Men's Basketball vs Duke</div><div>98 - 75</div></div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="bg-gray-800 text-white p-6 text-left w-full mt-6">
+        <h2 class="text-xl font-bold">Subscribe to Our Newsletter</h2>
+        <p>Stay updated with the latest news, scores, and exclusive content delivered straight to your inbox!</p>
+        <div class="mt-4">
+            <input type="text" placeholder="Enter your email" class="p-2 w-2/3 text-gray-900 rounded">
+            <button class="bg-yellow-400 p-2 w-1/3 mt-2 rounded block">Subscribe</button>
+        </div>
+    </section>
+</body>
+</html>
