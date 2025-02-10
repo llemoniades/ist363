@@ -1,0 +1,12 @@
+@mixin box-shadow($x, $y, $blur, $color) {
+    box-shadow: $x $y $blur $color;
+}
+
+@mixin flex-center {
+    display: flex;
+    align-items: center;
+}
+
+@mixin flex-gap($gap) {
+    gap: $gap;
+}
