@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .top-section {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+            align-items: stretch; 
+        }
+
+        .left-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+            width: 100%;
+        }
+
+        .left-grid img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; 
+        }
+
+        .cloud {
+            height: 100%;
+        }
+
+        .cloud-large {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .bottom-flex {
+            display: flex;
+            justify-content: space-between;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .bottom-flex img {
+            flex: 1;
+            max-width: 24%;
+        }
+
+        .btn-secondary {
+            background-color: white;
+            color: black;
+            border: 1px solid black;
+        }
+
+        .btn-secondary:hover {
+            background-color: black;
+            color: white;
+            border: 1px solid white;
+        }
+
+        @media (max-width: 768px) {
+            .top-section {
+                grid-template-columns: 1fr;
+            }
+
+            .left-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .bottom-flex {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .bottom-flex img {
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="images/logo.png" alt="Logo" height="40">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Portfolio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Shop</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container text-center mt-5">
+        <h2>Portfolio</h2>
+
+        <div class="top-section">
+            <div class="left-grid">
+                <img src="images/blue-flower-5158746_1280.jpg" alt=""> 
+                <img src="images/Canyon.JPG" alt="">                   
+                <img src="images/architecture-1868667_1280.jpg" alt="">
+                <img src="images/lake-8763490_1280.jpg" alt="">
+            </div>
+
+            <div class="cloud">
+                <img class="cloud-large" src="images/clouds-3353159_1280.jpg" alt="">
+            </div>
+        </div>
+
+        <div class="bottom-flex mt-3">
+            <img src="images/plum-2679782_1280.jpg" alt="">
+            <img src="images/snow-7658399_1280.jpg" alt="">
+            <img src="images/blue-eryngo-7319904_1280.jpg" alt="">
+            <img src="images/art-2578353_1280.jpg" alt="">
+        </div>
+
+        <button class="btn btn-primary mt-3">See More</button>
+    </div>
+
+    <div class="container bg-light text-center py-5 mt-5">
+        <h3>About the Artist</h3>
+        <p>Capturing moments through the lens, my passion is bringing emotions to life in every frame.</p>
+        <button class="btn btn-secondary">Read More</button>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
