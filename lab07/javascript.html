@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        // Answer #1
+        let favNumber = 489;
+        console.log("My favorite number is " + favNumber);
+    </script>
+
+<script>
+    // Answer #2
+    let favoriteFoods = ["Chicken", "Pizza", "Mac & Cheese", "Potato Chips"]; 
+    console.log(favoriteFoods[1]);
+    favoriteFoods.push("Ice Cream");
+    console.log(favoriteFoods);
+</script>
+
+<script>
+    // Answer #3
+    for (let i = 0; i < favoriteFoods.length; i++) {
+        console.log("Favorite Food " + (i + 1) + ": " + favoriteFoods[i]);
+    }
+</script>
+
+<script>
+    // Answer #4
+    for (let i = 0; i < favoriteFoods.length; i++) {
+        if(i === 1) continue
+        console.log("Favorite Food " + (i + 1) + ": " + favoriteFoods[i]);
+    }
+</script>
+
+<script>
+    // Answer #5
+    let book = [
+        { title: "Ultimate Spider-Man", 
+        author: "Jonathan Hickman", 
+        yearPublished: 2025,
+        isAvailable: true
+        }
+    ];
+    console.log(book[0].title);
+    console.log(book[0].author);
+    if (book[0].isAvailable) {
+        console.log("This book is available for checkout.");
+    } else {
+        console.log("Sorry, this book is currently checked out.");
+    }
+</script>
+
+<script>
+    // Answer #6
+    let x = 0;
+    while (x < 21) {
+        console.log(x);
+        x++;
+    }
+</script>
+
+<script>
+    // Answer #7
+    let randomNumber = Math.floor(Math.random() * 6) + 1;
+    console.log(randomNumber);
+</script>
+</body>
+</html>
