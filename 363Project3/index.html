@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gamelog</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+  <header class="bg-gradient-to-r from-purple-900 to-black p-4 text-white flex justify-between items-center">
+    <h1 class="text-2xl font-bold">Gamelog</h1>
+    <nav class="space-x-4">
+      <a href="dashboard.html" class="hover:underline">Dashboard</a>
+      <a href="index.html" class="hover:underline">My Games</a>
+      <a href="add.html" class="hover:underline">Add Game</a>
+    </nav>
+  </header>
+
+  <div class="flex justify-center p-6">
+    <div class="flex items-center gap-4">
+      <label class="text-lg font-semibold">Filters:</label>
+      <select id="platformFilter" class="border border-gray-300 rounded p-2">
+        <option value="">All Platforms</option>
+        <option value="PC">PC</option>
+        <option value="Nintendo Switch">Nintendo Switch</option>
+        <option value="PlayStation 5">PlayStation 5</option>
+        <option value="Xbox">Xbox</option>
+      </select>
+      <select id="statusFilter" class="border border-gray-300 rounded p-2">
+        <option value="">All Statuses</option>
+        <option value="Not Started">Not Started</option>
+        <option value="In Progress">In Progress</option>
+        <option value="Completed">Completed</option>
+        <option value="Abandoned">Abandoned</option>
+      </select>
+    </div>
+  </div>
+
+  <main class="max-w-6xl mx-auto bg-white p-6 rounded shadow">
+    <h2 class="text-2xl font-bold mb-4">My Games</h2>
+    <div id="gamesGrid" class="grid grid-cols-1 md:grid-cols-2 gap-4">
+
+    </div>
+  </main>
+
+  <footer class="bg-gradient-to-r from-purple-900 to-black text-white text-sm p-4 mt-6 text-center">
+    © 2025 Gamelog. All rights reserved. |
+    <a href="#" class="underline">Privacy Policy</a> |
+    <a href="#" class="underline">Terms of Service</a> |
+    <a href="#" class="underline">Contact</a>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
